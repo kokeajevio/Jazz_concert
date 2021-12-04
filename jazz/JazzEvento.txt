@@ -41,5 +41,5 @@ Rafael Nadal(Tennis)
 Muhammad Ali(Boxeo)
 categorias:Deportes
 Precio:20Euros
-Description:En este evento los atheletes famosos
-compiten con la musica de jazz vocal.
+Description:En este evento los atletas famosos
+compiten en los 100 metros lisos con la musica de jazz vocal.
