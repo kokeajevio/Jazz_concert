@@ -1,0 +1,28 @@
+.header {
+    width:100%;
+    height:auto;
+    background-color: black;
+    color:blanchedalmond;
+    padding-left:80px;
+    
+   
+}
+h1{
+    font-size: 40px;
+}
+.index{
+    text-align:center;
+    font-size: 20px;
+   padding-right: 120px;
+}
+.index li {
+    list-style:none;
+    display: inline;
+    padding:0 20px;
+    color: cornsilk;
+   
+}
+form {
+    float: right;
+    padding-right: 180px;
+}
