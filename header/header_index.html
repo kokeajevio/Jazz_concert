@@ -1,9 +1,9 @@
 <!DOCTYPE html>
- <html>
+<html lang="es">  
   <head>
 
          <meta charset="utf-8">
-         <title>index-html</title> 
+         <title>index.html</title> 
          <!--Título. Nombre  de la página web de inicio-->
           <link rel="stylesheet" href="header.css">
           <meta name="title" content="index.html ">
@@ -12,25 +12,92 @@
           <meta name="author" content="Jorge Muñoz Sánchez"> <!--Autor.-->
           <meta name="viewport" content="width=device-width, maximun-scale=1.0">
 
+<style>
+  .container{
+
+        display: grid;
+                      
+        grid-template: 150px 400px  50px / 1fr  1fr ; 
+        grid-template-areas:
+      "header               header"
+      "izquierda            derecha"
+      "footer                  footer";
+                                                        
+                        
+                        height: 100vh;
+                     
+           
+        
+                                
+                              }
+                              .item{
+                      
+                       background-color: black;
+                       
+                   }
+    .header{
+        
+        grid-area: header;
+       }
+       
+      
+     .izquierda{
+                        grid-area: izquierda;
+                        background: #B43443; 
+         
+        
+                    }
+
+     .derecha{
+                        grid-area: derecha;
+                       
+                        background-color: #BAA896;
+                      
+        
+                    }
+     .footer{ 
+                       grid-area: footer;
+         
+          text-align: center;
+        
+          
+        }
+        
+</style>
+
   </head>
 
   <body>
+    <section class="container">
 
-  <div class="header">
-   <h1>Jazz Concert</h1>
-    <div class="index">
-     <ul class ="tres">
-      <a href="URL"><li>inicio</li></a>
-     <a href="URL"><li>añadir un evento</li></a>
-      <a href="URL"><li>eventos</li></a>
-     </ul>
+      <div class=" item header">
+         <h1>Jazz Concert</h1>
+               <div class="index">
+               <ul class ="tres">
+                <a href="URL"><li>inicio</li></a>
+               <a href="URL"><li>añadir un evento</li></a>
+               <a href="URL"><li>eventos</li></a>
+       </ul>
+
+      </div>
     </div>
-    <form action ="siteURL"method =get>
-        <input type="search" name="search"placeholder"insert keyword">
-        <input type="submit" name="submit"value="buscar">
-       </form>
-  </div>
- 
 
-</body>
+      <div class=" item izquierda">izq</div>
+
+      <div class=" item derecha">
+
+
+      <form action ="siteURL"method =get>
+          <input type="search" name="search"placeholder insert keyword>
+          <input type="submit" name="submit"value="buscar">
+        </form>
+
+     </div>
+
+      <div class=" item footer">pllll</div>
+
+  
+ 
+   </section>
+  </body>
 </html>
