@@ -6,91 +6,83 @@
          <title>addEvent.html</title> 
          <!--Título. Página formulario.-->
           <link rel="stylesheet" href="header.css">
-          <meta name="title" content="addEvent.html ">
+          <meta name="title" content="adddddddEventMasami.html ">
           <!--Nombre de la página con el formulario debe tener este nombre-->
           <meta name="description" content="formulario de eventos">  <!--descripción --> 
           <meta name="author" content="Jorge Muñoz Sánchez"> <!--Autor.-->
           <meta name="viewport" content="width=device-width, maximun-scale=1.0">
 
-          <style>
-            .container{
+ <style>              
+.container{
                 
-                  display: grid;
+    display: grid;
                                 
-                  grid-template: 150px 400px  50px / 1fr  1fr ; 
-                  grid-template-areas:
-                "header               header"
-                "centro                 centro"
-                "footer                  footer";
+     grid-template: 150px 400px  50px / 1fr  1fr ; 
+     grid-template-areas:
+     "header               header"
+     "centro                 centro"
+     "footer                  footer";
                                                                   
-                                  
-                                  height: 100vh;
-                               
-                     
-                  
-                                          
-                                        }
+   height: 100vh;
+ }
                                         
-              .header{
-                  
-                  grid-area: header;
-                 
-                  
-      width:100%;
+ .header{
+    grid-area: header;
+    width:100%;
     height:auto;
     background-color: black;
     color:blanchedalmond;
     padding-left:80px;
    grid-area: header;
-       
-                  
-                 }
-                 h1{
+}
+
+h1{
     font-size: 40px;
 }
+
 .index{
     text-align:center;
     font-size: 20px;
    padding-right: 120px;
 }
+
 .index li {
     list-style:none;
     display: inline;
     padding:0 20px;
     color: cornsilk;
-   }
-
-form {
-    float: right;
-    padding-right: 180px;
+   
 }
 
 
  .item {
-    padding: 5px;
+   padding: 5px;
  }
        
                  
                 
 .centro{
     grid-area: centro;
-    background:#9370DB;                  
- }
+    background:#9370DB; 
+    width:100%;
+    height:auto;
+}
           
  .centro-logo {
-    text-align: left;
-    padding-top: 20px;
-    font-size: 24px;
-    padding-left: 100px;
+   text-align: left;
+   padding-top: 5px;
+   font-size: 24px;
+   padding-left: 100px;  
  }
 
- label{
+ label,.formulario form {
     display: inline-block;
     text-align: right;
     width: 150px;
-    }
+ }
+          
               
-.formulariocontacto {
+ .formulariocontacto {
     padding:2px;
     border: 1px solid #CCC;
     border-radius:2px;
@@ -99,18 +91,19 @@ form {
     background: whiteSmoke;
 }
 
-.etiqueta-evento{
+ .etiqueta-evento{
     padding-left: 100px;
 }
- 
-    
+
+
     .footer{
+    width:100%;
+    height:auto;
     background:black;
     text-align:center;
     color:blanchedalmond; 
-    padding:10px 0;
     grid-area: footer;
-     text-align: center;
+    text-align: center;
   }
 
   a {
@@ -119,7 +112,7 @@ form {
   text-decoration:none;
 }
                   
-          </style>
+ </style>
 
 </head>
 
@@ -131,9 +124,9 @@ form {
            <h1>Jazz Concert</h1>
                  <div class="index">
                  <ul class ="tres">
-                  <a href="URL"><li>inicio</li></a>
-                 <a href="URL"><li>añadir un evento</li></a>
-                 <a href="URL"><li>eventos</li></a>
+                 <li><a href="">inicio</a></li>
+                 <li><a href="URL">añadir un evento</a></li>
+                 <li><a href="URL">eventos</a></li>
          </ul>
   
           </div>
@@ -150,40 +143,46 @@ form {
             
 
             <p>
-                <label for="evento" class= "etiqueta-evento" >Título del evento: </label>
+                <label  class= "etiqueta-evento" >Título del evento: </label>
                 
-                <input type="text" name="texto id="texto placeholder="título del evento " class= "formulariocontacto" size="100" >
+                <input type="text" name="texto" id="texto" placeholder="título del evento " class="formulariocontacto"  size="100" >
             </p>
 
             <p>
-                <label for="evento" class= "etiqueta-evento" >Categoría: </label>
-                   <select name="categoria" class= "formulariocontacto"  required >
-                   
-                  <option value="Conciertos" >Conciertos</option>
-                  <option value="Fiestas">Fiestas</option>
-                  <option value="Teatro">Teatro</option>
-                  <option value="Deportes">Deportes</option>
-                  <option value="Deportes">Otros</option>
+                <label  class= "etiqueta-evento" >Categoría: </label>
+                   <select name="categoria" class="formulariocontacto"  required >
+
+                    <option value="" >Conciertos</option>
+                    <option value="value1">Fiestas</option>
+                    <option value="value2">Teatro</option>
+                    <option value="value3">Deportes</option>
+                    <option value="value4">Otros</option>
+
                 </select>
                 
             </p>
 
             <p>
-                <label for="precio" class= "etiqueta-evento">Introduce una contraseña: </label>
+                <label  class="etiqueta-evento">Fecha: </label>
+                <input type="date" class="formulariocontacto" value="2021-12-05">
+              
             
-                <input type="precio" name="texto id="texto placeholder= "contraseña"class= "formulariocontacto" size ="100">
             </p>
 
             
             <p>
-                <label for="number" class= "etiqueta-evento">Indica su edad (18-40): </label>
-            
-                <input type="num" name="number" id="number" class= "formulariocontacto" size ="100">
+                <label  class= "etiqueta-evento" >Precio  (€): </label>
+                
+                <input type="text" name="texto" class= "formulariocontacto" size="100" >
             </p>
            
-
-            <form name="formulario" method="post" action="/send.php" enctype="multipart/form-data">imagen de perfil:
-            
+        <p>
+            <label  class= "etiqueta-evento" >Descripción</label>
+            <textarea class="formulariocontacto"></textarea>
+        </p>
+           <label  class="etiqueta-evento">Imagen: </label>
+            <form name="formulario" method="post" action="/send.php" enctype="multipart/form-data">
+                
                 <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
             </form>
              
