@@ -17,7 +17,7 @@
 
         display: grid;
                       
-        grid-template: 150px 400px  50px / 1fr  1fr ; 
+        grid-template: 150px 400px  100px / 1fr  500px ; 
         grid-template-areas:
       "header               header"
       "centro                 centro"
@@ -34,6 +34,10 @@
     .header{
         
         grid-area: header;
+       }
+
+       .item {
+         padding: 5px;
        }
        
       
@@ -65,6 +69,7 @@
   </head>
 
   <body>
+    
     <section class="container">
 
       <div class=" item header">

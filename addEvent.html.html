@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <html>
+<html lang="es">  
   <head>
 
          <meta charset="utf-8">
@@ -12,14 +12,167 @@
           <meta name="author" content="Jorge Muñoz Sánchez"> <!--Autor.-->
           <meta name="viewport" content="width=device-width, maximun-scale=1.0">
 
+          <style>
+            .container{
+          
+                  display: grid;
+                                
+                  grid-template: 150px 400px  50px / 1fr  1fr ; 
+                  grid-template-areas:
+                "header               header"
+                "centro                 centro"
+                "footer                  footer";
+                                                                  
+                                  
+                                  height: 100vh;
+                               
+                     
+                  
+                                          
+                                        }
+                                        
+              .header{
+                  
+                  grid-area: header;
+                  
+                 }
+                 .item {
+         padding: 5px;
+       }
+       
+                 
+                
+               .centro{
+                                  grid-area: centro;
+                                  background:#9370DB; 
+                   
+                  
+                              }
+          
+              .centro-logo {
+                 text-align: left;
+               padding-top: 20px;
+               
+                 font-size: 24px;
+                 padding-left: 100px;
+          
+                
+               
+              }
+          
+              
+               .footer{ 
+                                 grid-area: footer;
+                   
+                    text-align: center;
+                  background-color: black;
+                    
+                  }
+
+                  .formulariocontacto {
+padding:2px;
+margin-left: 100px;
+border: 1px solid #CCC;
+
+border-radius:2px;
+outline:none;
+font-size:14px;
+background: whiteSmoke;
+}
+
+    .etiqueta-evento{
+        padding-left: 100px;
+    }
  
+    .select.categoria.formulariocontacto {
+        margin-left:100px;
+        height:20px;
+        width:1065px;
+        vertical-align: middle;
+    }
+ 
+                  
+          </style>
 
 </head>
 
 <body>
 
+    <section class="container">
+
+        <div class=" item header">
+           <h1>Jazz Concert</h1>
+                 <div class="index">
+                 <ul class ="tres">
+                  <a href="URL"><li>inicio</li></a>
+                 <a href="URL"><li>añadir un evento</li></a>
+                 <a href="URL"><li>eventos</li></a>
+         </ul>
+  
+          </div>
+    </div>
+
+        <div class=" item centro">
+            <div class="item centro-logo">
+              Nuevo evento
+            </div>
+   
+        <div class="formulario">
+            
+            
+            
+
+            <p>
+                <label for="evento" class= "etiqueta-evento" >Título del evento: </label>
+                
+                <input type="text" name="texto id="texto placeholder="título del evento " class= "formulariocontacto" size="140" >
+            </p>
+
+            <p>
+                
+                   <select name="categoria"  class="categoria.formulariocontacto"  required >Categoría
+                  <option value="" >Categoría</option>
+                  <option value="Helado">Helado</option>
+                  <option value="Torta">Torta</option>
+                </select>
+        
+            </p>
+
+            <p>
+                <label for="password">Introduce una contraseña: </label>
+                <br>
+                <input type="password" name="texto id="texto placeholder= "contraseña "class= "formulariocontacto" size ="140">
+            </p>
+
+            <p>
+                <label for="number">Indica su edad (18-40): </label>
+                <br>
+                <input type="num" name="number" id="number" class= "formulariocontacto" size ="140">
+            </p>
+
+           
+            <br>
 
 
+            <br>
+
+            <form name="formulario" method="post" action="/send.php" enctype="multipart/form-data">imagen de perfil:
+                <br>
+                <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
+            </form>
+             
+            
+     
+    
+     
+
+</div>
+</div>
+<div class=" item footer"></div>
+   
+
+
+</section>
 </body>
 
 </html>
