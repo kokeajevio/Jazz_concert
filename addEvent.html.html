@@ -75,13 +75,15 @@ form {
                .centro{
                                   grid-area: centro;
                                   background:#9370DB; 
+                                  width:100%;
+                                  height:auto;
                    
                   
                               }
           
               .centro-logo {
                  text-align: left;
-               padding-top: 20px;
+                 padding-top: 5px;
                
                  font-size: 24px;
                  padding-left: 100px;
@@ -114,6 +116,13 @@ background: whiteSmoke;
         width:1065px;
         vertical-align: middle;
     }
+        .descripción {
+        margin-left:100px;
+        height:20px;
+        width:1065px;
+        vertical-align: middle;
+        padding-bottom: 20px;
+    }
     .precio {
         margin-left:100px;
         height:20px;
@@ -122,10 +131,12 @@ background: whiteSmoke;
 
     }
     .footer{
+    width:100%;
+    height:auto;
     background:black;
     text-align:center;
     color:blanchedalmond; 
-    padding:10px 0;
+    
     grid-area: footer;
      text-align: center;
   }
@@ -187,19 +198,22 @@ background: whiteSmoke;
 
             <p>
                 <label for="fecha" class="fecha">Fecha: </label>
-              
-                <input type="date" id="categoría" name="categoría"  value="<?php echo date("2021-12-05");?>
-            </select>
+                
+                <input type="date" id="categoría" name="categoría"  class="categoria" value="<?php echo date("2021-12-05");?>
+            
             </p>
 
             
             <p>
-                <label for="evento" class= "etiqueta-evento" >Precio: </label>
+                <label for="evento" class= "etiqueta-evento" >Precio  (€): </label>
                 
                 <input type="text" name="texto" id="texto"class= "formulariocontacto" size="140" >
             </p>
            
-            
+        <p>
+            <label for="descripción" class= "descripción" >Descripción </label>
+            <textarea class="descripción"></textarea>
+        </p>
 
             <form name="formulario" method="post" action="/send.php" enctype="multipart/form-data">imagen de perfil:
                 
