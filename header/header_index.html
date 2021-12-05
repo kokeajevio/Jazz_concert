@@ -14,10 +14,10 @@
 
 <style>
 
-  .flex-container{
+  .container{
     display: grid;
-    display:flex;
-    grid-template: 150px 400px  60px / 1fr  500px ; 
+    
+    grid-template: 150px 400px  50px / 1fr  1fr ; 
     grid-template-areas:
       "header               header"
       "centro                 centro"
@@ -78,7 +78,7 @@
 
   <body>
 
-    <section class="text-container">
+    <section class="container">
 
       <div class=" item header">
          <h1>Jazz Concert</h1>
@@ -99,9 +99,9 @@
       
 
 
-      <form action ="siteURL"method =get class="buscar">
-          <input type="search" name="search"placeholder insert keyword>
-          <input type="submit" name="submit"value="buscar">
+      <form action ="siteURL" method=get class="buscar">
+          <input type="search" name="search" placeholder="keyword">
+          <input type="submit" name="submit" value="buscar">
         </form>
 
      </div>
