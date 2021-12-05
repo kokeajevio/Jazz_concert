@@ -143,26 +143,27 @@ h1{
             
 
             <p>
-                <label for="evento" class= "etiqueta-evento" >Título del evento: </label>
+                <label  class= "etiqueta-evento" >Título del evento: </label>
                 
                 <input type="text" name="texto" id="texto" placeholder="título del evento " class="formulariocontacto"  size="100" >
             </p>
 
             <p>
-                <label for="evento" class= "etiqueta-evento" >Categoría: </label>
+                <label  class= "etiqueta-evento" >Categoría: </label>
                    <select name="categoria" class="formulariocontacto"  required >
-                   
-                  <option value="Conciertos" >Conciertos</option>
-                  <option value="Fiestas">Fiestas</option>
-                  <option value="Teatro">Teatro</option>
-                  <option value="Deportes">Deportes</option>
-                  <option value="Deportes">Otros</option>
+
+                    <option value="" >Conciertos</option>
+                    <option value="value1">Fiestas</option>
+                    <option value="value2">Teatro</option>
+                    <option value="value3">Deportes</option>
+                    <option value="value4">Otros</option>
+                    
                 </select>
                 
             </p>
 
             <p>
-                <label for="fecha" class="etiqueta-evento">Fecha: </label>
+                <label  class="etiqueta-evento">Fecha: </label>
                 
                 <input type="date" id="categoría" name="categoría" class="formulariocontacto"  value="<?php echo date("2021-12-05");?>
             
@@ -170,16 +171,16 @@ h1{
 
             
             <p>
-                <label for="evento" class= "etiqueta-evento" >Precio  (€): </label>
+                <label  class= "etiqueta-evento" >Precio  (€): </label>
                 
-                <input type="text" name="texto" id="texto"class= "formulariocontacto" size="100" >
+                <input type="text" name="texto" class= "formulariocontacto" size="100" >
             </p>
            
         <p>
-            <label for="descripción" class= "etiqueta-evento" >Descripción</label>
+            <label  class= "etiqueta-evento" >Descripción</label>
             <textarea class="formulariocontacto"></textarea>
         </p>
-           <label for="imagen" class="etiqueta-evento">Imagen: </label>
+           <label  class="etiqueta-evento">Imagen: </label>
             <form name="formulario" method="post" action="/send.php" enctype="multipart/form-data" size="80">
                 
                 <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
