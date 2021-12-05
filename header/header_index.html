@@ -20,7 +20,7 @@
         grid-template: 150px 400px  50px / 1fr  1fr ; 
         grid-template-areas:
       "header               header"
-      "izquierda            derecha"
+      "centro                 centro"
       "footer                  footer";
                                                         
                         
@@ -30,36 +30,33 @@
         
                                 
                               }
-                              .item{
-                      
-                       background-color: black;
-                       
-                   }
+                              
     .header{
         
         grid-area: header;
        }
        
       
-     .izquierda{
-                        grid-area: izquierda;
-                        background: #B43443; 
+     .centro{
+                        grid-area: centro;
+                        background:#9370DB; 
          
         
                     }
 
-     .derecha{
-                        grid-area: derecha;
-                       
-                        background-color: #BAA896;
-                      
-        
-                    }
+    .centro-logo {
+       text-align: center;
+       padding-top: 20px;
+       font-size: 28px;
+     
+    }
+
+    
      .footer{ 
                        grid-area: footer;
          
           text-align: center;
-        
+        background-color: black;
           
         }
         
@@ -82,9 +79,11 @@
       </div>
     </div>
 
-      <div class=" item izquierda">izq</div>
-
-      <div class=" item derecha">
+      <div class=" item centro">
+          <div class="item centro-logo">
+            Eventos de la semana
+          </div>
+      
 
 
       <form action ="siteURL"method =get>
@@ -94,7 +93,7 @@
 
      </div>
 
-      <div class=" item footer">pllll</div>
+      <div class=" item footer"></div>
 
   
  
