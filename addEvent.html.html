@@ -105,12 +105,21 @@ background: whiteSmoke;
     .etiqueta-evento{
         padding-left: 100px;
     }
- 
+    .fecha{
+        padding-left: 100px;
+    }
     .categoria {
         margin-left:100px;
         height:20px;
         width:1065px;
         vertical-align: middle;
+    }
+    .precio {
+        margin-left:100px;
+        height:20px;
+        width:1065px;
+        vertical-align: middle;
+
     }
     .footer{
     background:black;
@@ -160,7 +169,7 @@ background: whiteSmoke;
             <p>
                 <label for="evento" class= "etiqueta-evento" >Título del evento: </label>
                 
-                <input type="text" name="texto id="texto placeholder="título del evento " class= "formulariocontacto" size="140" >
+                <input type="text" name="texto" id="texto" placeholder="título del evento " class= "formulariocontacto" size="140" >
             </p>
 
             <p>
@@ -177,25 +186,23 @@ background: whiteSmoke;
             </p>
 
             <p>
-                <label for="precio">Introduce una contraseña: </label>
-                <br>
-                <input type="precio" name="texto id="texto placeholder= "contraseña "class= "formulariocontacto" size ="140">
+                <label for="fecha" class="fecha">Fecha: </label>
+              
+                <input type="date" id="categoría" name="categoría"  value="<?php echo date("2021-12-05");?>
+            </select>
             </p>
 
+            
             <p>
-                <label for="number">Indica su edad (18-40): </label>
-                <br>
-                <input type="num" name="number" id="number" class= "formulariocontacto" size ="140">
+                <label for="evento" class= "etiqueta-evento" >Precio: </label>
+                
+                <input type="text" name="texto" id="texto"class= "formulariocontacto" size="140" >
             </p>
-
            
-            <br>
-
-
-            <br>
+            
 
             <form name="formulario" method="post" action="/send.php" enctype="multipart/form-data">imagen de perfil:
-                <br>
+                
                 <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
             </form>
              
