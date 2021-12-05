@@ -16,23 +16,23 @@
         
 .container{
                 
-                 display: grid;
-                 grid-template: 150px 400px  50px / 1fr  1fr ; 
-                  grid-template-areas:
+  display: grid;
+  grid-template: 150px 400px  50px / 1fr  1fr ; 
+   grid-template-areas:
                 "header               header"
                 "centro                 centro"
                 "footer                  footer";
-                 height: 100vh;
+  height: 100vh;
        }
 
 .header{
-             grid-area: header;
-             width:100%;
-             height:auto;
-             background-color: black;
-             color:blanchedalmond;
-             padding-left:80px;
-            grid-area: header;
+     grid-area: header;
+     width:100%;
+     height:auto;
+     background-color: black;
+     color:blanchedalmond;
+     padding-left:80px;
+    grid-area: header;
        
 }
 h1{
@@ -172,18 +172,18 @@ a {
                 <label  class= "etiqueta-evento" >Categoría: </label>
                    <select name="categoria" class= "categoria"  required >
                    
-                  <option value="Concierto" >Conciertos</option>
-                  <option value="Fiesta">Fiestas</option>
-                  <option value="Teatros">Teatro</option>
-                  <option value="Deporte">Deportes</option>
-                  <option value="Otro">Otros</option>
+                  <option value="" >Conciertos</option>
+                  <option value="value1">Fiestas</option>
+                  <option value="value2">Teatro</option>
+                  <option value="value3">Deportes</option>
+                  <option value="value4">Otros</option>
                 </select>
                 
             </p>
 
             <p>
                 <label  class="fecha">Fecha: </label>
-                <input type="date" class="categoria" value="2021-12.">
+                <input type="date" class="categoria" value="2021-12-05">
             
             </p>
 
