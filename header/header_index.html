@@ -13,76 +13,63 @@
           <meta name="viewport" content="width=device-width, maximun-scale=1.0">
 
 <style>
-  .container{
 
-        display: grid;
-                      
-        grid-template: 150px 400px  60px / 1fr  500px ; 
-        grid-template-areas:
+  .flex-container{
+    display: grid;
+    display:flex;
+    grid-template: 150px 400px  60px / 1fr  500px ; 
+    grid-template-areas:
       "header               header"
       "centro                 centro"
       "footer                  footer";
-                                                        
-                        
-                        height: 100vh;
-                     
-           
-        
-                                
-                              }
+   height: 100vh;
+}
                               
     .header{
-      width:100%;
+    width:100%;
     height:auto;
     background-color: black;
     color:blanchedalmond;
     padding-left:80px;
-   grid-area: header;
+    grid-area: header;
        }
 
-       .item {
-         padding: 5px;
-       }
+   .item {
+     padding: 5px;
+ }
        
       
      .centro{
-                        grid-area: centro;
-                        background:#9370DB; 
-                        width:100%;
-                         height:auto;
-         
-        
-                    }
+      grid-area: centro;
+      background:#9370DB; 
+      width:100%;
+      height:auto;
+ }
 
     .centro-logo {
        text-align: center;
        padding-top: 20px;
        font-size: 28px;
-     
-    }
-
-    
-   
-
-        a {
-  color: skyblue;
-  padding-left: 10px;
+  }
+  
+  a {
+      color: skyblue;
+      padding-left: 10px;
 }
 
 .footer{
-    background:black;
-    text-align:center;
-    color:blanchedalmond; 
-    width:100%;
-    height:auto;
-    grid-area: footer;
-     text-align: center;
+      background:black;
+      text-align:center;
+      color:blanchedalmond; 
+      width:100%;
+      height:auto;
+      grid-area: footer;
+      text-align: center;
   }
 
   .buscar {
-    
-    padding-right: 10px;
-    margin-bottom: 20px;
+     padding-right: 10px;
+     margin-bottom: 20px;
   }
         
 </style>
@@ -91,15 +78,15 @@
 
   <body>
 
-    <section class="container">
+    <section class="text-container">
 
       <div class=" item header">
          <h1>Jazz Concert</h1>
                <div class="index">
                <ul class ="tres">
-                <a href="URL"><li>inicio</li></a>
-               <a href="URL"><li>añadir un evento</li></a>
-               <a href="URL"><li>eventos</li></a>
+                <li><a href="URL">inicio</a></li>
+                <li><a href="URL">añadir un evento</a></li>
+                <li><a href="URL">eventos</a></li>
        </ul>
 
       </div>
