@@ -25,16 +25,43 @@
    height: 100vh;
 }
                               
-    .header{
+.header{
+    grid-area: header;
     width:100%;
     height:auto;
     background-color: black;
     color:blanchedalmond;
     padding-left:80px;
-    grid-area: header;
-    padding-bottom: 10px;
-       }
+   grid-area: header;
+}
 
+h1{
+    font-size: 40px;
+}
+
+.index{
+    text-align:center;
+    font-size: 20px;
+   padding-right: 120px;
+}
+
+.index li {
+    list-style:none;
+    display: inline;
+    padding:0 20px;
+    color: cornsilk;
+   
+}
+a {
+  color: skyblue;
+  padding-left: 10px;
+  text-decoration:none;
+}
+
+form {
+    float: right;
+    padding-right: 180px;
+}
    .item {
      padding: 5px;
  }
@@ -58,6 +85,19 @@
       padding-left: 10px;
 }
 
+.flex-container{
+  padding-top: 30px;
+  display: flex;
+  justify-content:space-between;
+  
+}
+
+.flex-container div{
+  width:20%;
+  margin:0 2%;
+}
+
+
 .footer{
       background:black;
       text-align:center;
@@ -70,43 +110,9 @@
 
   .buscar {
      padding-right: 10px;
-     padding-bottom: 20px;
+     margin-bottom: 20px;
   }
-
-  .duo {
-    width:"300";
-    height: "300";
-    margin-top: 15px;
-    float: left;
-  }
-
-  .horario {
-    padding-left: 80px;
-    
- }
-  .guitarra {
-    float: left;
-    margin-top: 40px;
-  }
-  .trio {
-    width:"300";
-    height: "300";
-    margin-top: 15px;
-    float: left;
-  }
-  
-  .horario2 {
-    padding-left: 80px;
-    
- }
- .piano {
-    float: right;
-    padding-right: 60px;
-   
-   
-   
-  }
-  
+        
 </style>
 
   </head>
@@ -131,71 +137,59 @@
           <div class="item centro-logo">
             Eventos de la semana
           </div>
-    
-
+      
+     
 
       <form action ="siteURL" method=get class="buscar">
-          <input type="search" name="search" placeholder="eventos">
+          <input type="search" name="search" placeholder="keyword">
           <input type="submit" name="submit" value="buscar">
         </form>
+      <div class="flex-container">
+          <div class="flex-item">
+           <a href="URL"><img class="guitar" src="jazz/guitarduo.jpg" alt="guitarduo" width="250" height="250"></a>
+           
+          </div>
+          <div class="flex-item">
+            <p>13.12.2021 <strong>lunes</strong>
+              <br>
+  
+                Horario: <strong>9:00</strong></p>
+            <h3 >GUITARRA con SHAKSPEARE</h3>
+            <p >
+              <strong>Joe Pass y Pat Metheny(gt)<br></strong>
+              PotiPoti Theatre Company<br>
+              Categoría:Teatro<br>
+              Ciudad: Berlin<br>
+              Festival: Semana del jazz en Berlin<br>
+              Precio: <strong>35 euros</strong>
+            </p>
+        </div>
+        <div class="flex-item">
+         
+         <a href="URL"><img class="piano" src="jazz/pianotrio.jpg" alt="pianotrio" width="250" height="250"></a> 
+         
+        </div>
+        <div class="flex-item">
+         <p> 14.12.2021 <strong>martes</strong>
+          <br>
 
-        <div class="semana-eventos">
-           <figure class= "duo">
-            <a href="https://www.berlin.de/en/tickets/jazz/pat-metheny-side-eye-49cde1af-93a2-4730-8c57-b08b70990db9/" 
-            class="duo">
-            <img src="https://i.ibb.co/d0P74S6/guitarduo.jpg"
-                 width="250"
-                 height="250"></a>
-          
-            <figcaption class= "horario">13.12.2021 <strong>lunes</strong>
-            <br>
-
-              Horario: <strong>9:00</strong></figcaption>
-          </figure>
-          
-          <div class = "guitarra">
-          <h3 >GUITARRA con SHAKSPEARE</h3>
+            Horario: <strong>17:00</strong></p>
+          <h3 >PIANO TRIO</h3>
           <p >
-            <strong>Joe Pass y Pat Metheny(gt)<br></strong>
-            PotiPoti Theatre Company<br>
-            Categoría:Teatro<br>
+            <strong>Bill Evans(p)<br></strong>
+            <strong>Scott Ruffalo(b)<br></strong>
+            <strong>Philly Lee Joenes(dr)<br></strong>
+            El rincón de Suzuki San Café<br>
+            Categoría:Concierto<br>
             Ciudad: Berlin<br>
             Festival: Semana del jazz en Berlin<br>
-            Precio: <strong>35 euros</strong>
+            Precio: <strong>55 euros</strong>
+         
           </p>
         </div>
-
-     
-          <figure class= "trio">
-           <a href="https://www.apoloybaco.com/jazz/index.php?option=com_content&view=article&id=1348&Itemid=262" 
-           class="duo">
-           <img src="https://i.ibb.co/chtdcTz/pianotrio.jpg"
-                width="250"
-                height="250"></a>
-         
-           <figcaption class= "horario2">14.12.2021 <strong>martes</strong>
-           <br>
-
-             Horario: <strong>17:00</strong></figcaption>
-         </figure>
-         
-         <div class = "piano">
-         <h3 >PIANO TRIO</h3>
-         <p >
-           <strong>Bill Evans(p)<br></strong>
-           <strong>Scott LaFaro(b)<br></strong>
-           <strong>Philly Lee Joenes(dr)<br></strong>
-           El rincón de Suzuki San Café<br>
-           Categoría:Concierto<br>
-           Ciudad: Berlin<br>
-           Festival: Semana del jazz en Berlin<br>
-           Precio: <strong>55 euros</strong>
-        
-         </p>
-       
-        </div>
+      </div>
      </div>
-     </div>
+
       <div class=" item footer">
 
       <i>Autor:</i>
