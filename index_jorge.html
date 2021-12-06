@@ -16,7 +16,7 @@
 
   .container{
     display: grid;
-
+    
     grid-template: 150px 400px  50px / 1fr  1fr ; 
     grid-template-areas:
       "header               header"
@@ -24,7 +24,7 @@
       "footer                  footer";
    height: 100vh;
 }
-
+                              
 .header{
     grid-area: header;
     width:100%;
@@ -50,7 +50,7 @@ h1{
     display: inline;
     padding:0 20px;
     color: cornsilk;
-
+   
 }
 a {
   color: skyblue;
@@ -65,8 +65,8 @@ form {
    .item {
      padding: 5px;
  }
-
-
+       
+      
      .centro{
       grid-area: centro;
       background:#9370DB; 
@@ -79,7 +79,7 @@ form {
        padding-top: 20px;
        font-size: 28px;
   }
-
+  
   a {
       color: skyblue;
       padding-left: 10px;
@@ -87,16 +87,16 @@ form {
 
 .flex-container{
   padding-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
+  display: flex;
+  justify-content:space-between;
+  
 }
 
 .flex-container div{
   width:20%;
   margin:0 2%;
 }
+
 
 .footer{
       background:black;
@@ -112,7 +112,7 @@ form {
      padding-right: 10px;
      margin-bottom: 20px;
   }
-
+        
 </style>
 
   </head>
@@ -137,8 +137,8 @@ form {
           <div class="item centro-logo">
             Eventos de la semana
           </div>
-
-
+      
+     
 
       <form action ="siteURL" method=get class="buscar">
           <input type="search" name="search" placeholder="keyword">
@@ -147,30 +147,45 @@ form {
       <div class="flex-container">
           <div class="flex-item">
            <a href="URL"><img class="guitar" src="jazz/guitarduo.jpg" alt="guitarduo" width="250" height="250"></a>
-
+           
           </div>
           <div class="flex-item">
-           <p>03.12.2021</p>
-            <p>19:00-</p>
-            <P>GUITARRE con SHAKSPEARE</P>
-            <p>Joe Pass y Pat Metheny(gt)</p>
-            <p>PotiPoti Theatre Company</p>
-            <p>categoras:Theatro</p> 
-            <p> Precio:35 Euros</p>
+            <p>13.12.2021 <strong>lunes</strong>
+              <br>
+  
+                Horario: <strong>9:00</strong></p>
+            <h3 >GUITARRA con SHAKSPEARE</h3>
+            <p >
+              <strong>Joe Pass y Pat Metheny(gt)<br></strong>
+              PotiPoti Theatre Company<br>
+              Categoría:Teatro<br>
+              Ciudad: Berlin<br>
+              Festival: Semana del jazz en Berlin<br>
+              Precio: <strong>35 euros</strong>
+            </p>
         </div>
         <div class="flex-item">
+         
          <a href="URL"><img class="piano" src="jazz/pianotrio.jpg" alt="pianotrio" width="250" height="250"></a> 
+         
         </div>
         <div class="flex-item">
-         <p>04.12.2021</p>
-         <p>19:00-</p>   
-         <p>PIANO TRIO</p> 
-         <p>Bill Evans(p)</p>
-         <p>Scott Ruffalo(b)</p>
-         <p>Philly Lee Joens(dr)</p>   
-         <p>Categorias:Conciertos</p> 
-         <p>Precio:50 Euros</p> 
+         <p> 14.12.2021 <strong>martes</strong>
+          <br>
 
+            Horario: <strong>17:00</strong></p>
+          <h3 >PIANO TRIO</h3>
+          <p >
+            <strong>Bill Evans(p)<br></strong>
+            <strong>Scott Ruffalo(b)<br></strong>
+            <strong>Philly Lee Joenes(dr)<br></strong>
+            El rincón de Suzuki San Café<br>
+            Categoría:Concierto<br>
+            Ciudad: Berlin<br>
+            Festival: Semana del jazz en Berlin<br>
+            Precio: <strong>55 euros</strong>
+         
+          </p>
         </div>
       </div>
      </div>
@@ -181,8 +196,8 @@ form {
     <a href="mailto:kokeajevio55@zoho.eu?Subject=Interesado%20en%20el%20curso" >Jorge Muñoz Sánchez</a>
     <a href="tel:+49-152-3704-8215">0152-3704-8215</a></div>
 
-
-
+  
+ 
    </section>
   </body>
-</html> 
+</html>
